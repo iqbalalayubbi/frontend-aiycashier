@@ -75,7 +75,7 @@ export default {
       if (input.length !== 0){
         const itemsFind = []
         this.data.forEach(item => {
-          if(item.name.startsWith(input)){
+          if(item.name.startsWith(input.toLowerCase())){
             console.log('benar')
             itemsFind.push(item)
             this.items = itemsFind
