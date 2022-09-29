@@ -1,4 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
+import './assets/tailwind.css'
+import { Icon } from '@iconify/vue';
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.component('Icon-elit',Icon)
+app.use(router)
+app.mount('#app')
